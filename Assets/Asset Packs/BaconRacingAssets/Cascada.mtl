@@ -1,0 +1,22 @@
+# MTL written from C:\Users\ALD1YO\Documents\Bacon_Racing\Pista_Bambu\Exports\Cascada.obj
+newmtl Cascada
+Kd 0.086076 0.0180036 0
+Ns 16
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl Cascada_agua
+Kd 0 0.347256 0.8
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.01 0.01 0.01
+newmtl Cascada_erosion
+Kd 0.8 0.321552 0.110646
+Ns 32
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0

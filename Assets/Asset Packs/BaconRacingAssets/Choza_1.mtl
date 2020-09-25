@@ -1,0 +1,36 @@
+# MTL written from C:\Users\ALD1YO\Documents\Unity_repos\Unity2018.3.7f1\Ultimate_BaconRacing\Assets\Props\Pandas_props\Objs\Choza_1.obj
+newmtl base_032casa
+Kd 0.116456 0.116456 0.116456
+Ns 1024
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.0936709 0.0936709 0.0936709
+newmtl casa_032color_032base
+Kd 0.8 0.8 0.8
+Ns 64
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl detalles_032casa
+Kd 0.225316 0.111675 0.0587111
+Ns 128
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl detalles_032tejado
+Kd 0.0607595 0.0029577 0
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+newmtl tejado
+Kd 0.328479 0.185984 0.108494
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0

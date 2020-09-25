@@ -1,0 +1,15 @@
+# MTL written from C:\Users\Lenovo\Documents\Bacon_Racing\Pista_Bambu\props\Piedra_2.obj
+newmtl cafe
+Kd 0.172688 0.0410156 0
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.04 0.04 0.04
+newmtl cafe2
+Kd 0.0998175 0.0410156 0.00294122
+Ns 256
+d 1
+illum 2
+Ka 0 0 0
+Ks 0.04 0.04 0.04

@@ -41,7 +41,7 @@ namespace RPG.Combat
             this.damage = damage;
             this.instigator = instigator;
 
-            Destroy(gameObject, maxLifeTime);
+            Destroy(this.gameObject, maxLifeTime);
         }
 
         private Vector3 GetAimLocation()
@@ -58,7 +58,16 @@ namespace RPG.Combat
 
         private void OnTriggerEnter(Collider other)
         {
-            
+            var CosaConVida = other.GetComponent<Health>();
+            if (CosaConVida != target && !CosaConVida.IsDead())
+            {
+                print("choque");
+                CosaConVida.TakeDamage(instigator, damage);
+                Destroy(gameObject);
+
+            }
+
+            //Original
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead()) return;
             target.TakeDamage(instigator, damage);

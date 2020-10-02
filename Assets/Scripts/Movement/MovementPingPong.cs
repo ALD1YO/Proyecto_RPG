@@ -8,7 +8,7 @@ public class MovementPingPong : MonoBehaviour
 	public int posicion = 10;
 	public int Velocidad = 3;
 
-	void Update()
+	void LateUpdate()
 	{
 		transform.position =
 		new Vector3(Mathf.PingPong(Time.time * Velocidad, distancia) - posicion, transform.position.y, transform.position.z

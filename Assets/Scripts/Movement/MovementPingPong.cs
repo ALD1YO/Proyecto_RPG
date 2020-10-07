@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementPingPong : MonoBehaviour
+namespace RPG.Movement
 {
-	public int distancia = 5;
-	public int posicion = 10;
-	public int Velocidad = 3;
-
-	void LateUpdate()
+	public class MovementPingPong : MonoBehaviour
 	{
-		transform.position =
-		new Vector3(Mathf.PingPong(Time.time * Velocidad, distancia) - posicion, transform.position.y, transform.position.z
-		);
+		public int distancia = 5;
+		public int posicion = 10;
+		public int Velocidad = 3;
+
+		void LateUpdate()
+		{
+			transform.position =
+			new Vector3(Mathf.PingPong(Time.time * Velocidad, distancia) - posicion, transform.position.y, transform.position.z
+			);
+		}
 	}
 }
+
 

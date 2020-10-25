@@ -39,11 +39,31 @@ namespace RPG.Control
                 return;
             }
 
+            //Script nuevo
+            if (BlockInteract()) return;
+
+            if (BlockInteract()) return;
             if (InteractWithComponent()) return;
             if (InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
 
+        }
+
+        private bool BlockInteract()
+        {
+            RaycastHit[] hits = RaycastAllSorted();
+            foreach (RaycastHit hit in hits)
+            {
+                if (hit.collider.gameObject.tag == "Trap")
+                {
+                    //print("Bloqueando");
+                    return true;
+
+                }
+            }
+
+            return false;
         }
 
         private bool InteractWithUI()

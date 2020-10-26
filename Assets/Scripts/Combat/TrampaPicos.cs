@@ -8,6 +8,7 @@ namespace RPG.Combat
 {
     public class TrampaPicos : MonoBehaviour
     {
+        [SerializeField] float wakeupTime = 0.0f;
         [SerializeField] float activeTime = 5.0f;
         [SerializeField] float inactiveTime = 5.0f;
         [SerializeField] float emergingDistance;
@@ -19,9 +20,9 @@ namespace RPG.Combat
 
         private void Start()
         {
-            StartCoroutine(SecuenciaTrampa());
+            StartCoroutine(WakeupTime());
         }
-
+       
         public void Posicion(bool isItOn)
         {
             var pos = transform.position;
@@ -37,6 +38,12 @@ namespace RPG.Combat
             }
 
 
+        }
+
+        private IEnumerator WakeupTime()
+        {
+            yield return new WaitForSeconds(wakeupTime);
+            StartCoroutine(SecuenciaTrampa());
         }
 
         private IEnumerator SecuenciaTrampa()

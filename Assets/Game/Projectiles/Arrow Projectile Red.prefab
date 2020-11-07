@@ -73,6 +73,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 109868741960554064, guid: 9aec351edae4ee84a886f269586f0cdb,
         type: 3}
+    - target: {fileID: 3917948026894814874, guid: 5a04f064e25e27742ad916895b285f65,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4696519466386565244, guid: 5a04f064e25e27742ad916895b285f65,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.r

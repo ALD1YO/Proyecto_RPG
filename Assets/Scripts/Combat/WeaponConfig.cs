@@ -18,6 +18,7 @@ namespace RPG.Combat
         [SerializeField] Projectile projectile = null;
 
 
+
         const string weaponName = "Weapon";
 
         public Weapon Spawn(Transform rightHand, Transform leftHand, Animator animator)

@@ -58,14 +58,23 @@ namespace RPG.Combat
 
         private void OnTriggerEnter(Collider other)
         {
-            var CosaConVida = other.GetComponent<Health>();
-            if (CosaConVida != target && !CosaConVida.IsDead())
+            //print(instigator.gameObject.name);
+            if (other.GetComponent<TerrainCollider>())
             {
-                print("choque");
+                Destroy(this.gameObject);
+                onHit.Invoke();
+                return;
+            }
+
+            var CosaConVida = other.GetComponent<Health>();
+            if (CosaConVida && CosaConVida != target && !CosaConVida.IsDead() && CosaConVida.gameObject != instigator)
+            {
                 CosaConVida.TakeDamage(instigator, damage);
                 Destroy(gameObject);
 
             }
+
+            
 
             //Original
             if (other.GetComponent<Health>() != target) return;
@@ -89,5 +98,6 @@ namespace RPG.Combat
             Destroy(gameObject, lifeAfterImpact);
             
         }
+        
     }
 }

@@ -5631,6 +5631,16 @@ PrefabInstance:
       propertyPath: m_ScreenY
       value: 0.61
       objectReference: {fileID: 0}
+    - target: {fileID: 4714174832812211426, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
+        type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714174832812211436, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4714174832812211439, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -5654,7 +5664,7 @@ PrefabInstance:
     - target: {fileID: 4714174832812211439, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.429497
+      value: -20.429733
       objectReference: {fileID: 0}
     - target: {fileID: 4714174832812211439, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
@@ -5664,7 +5674,7 @@ PrefabInstance:
     - target: {fileID: 4714174832812211439, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.8038177
+      value: 6.8038025
       objectReference: {fileID: 0}
     - target: {fileID: 4714174832812211439, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
@@ -5744,7 +5754,7 @@ PrefabInstance:
     - target: {fileID: 4714174834249443822, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.429497
+      value: -20.429733
       objectReference: {fileID: 0}
     - target: {fileID: 4714174834249443822, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
@@ -5754,7 +5764,7 @@ PrefabInstance:
     - target: {fileID: 4714174834249443822, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.8038177
+      value: 6.8038025
       objectReference: {fileID: 0}
     - target: {fileID: 4714174834249443822, guid: 4b637640675e37c4aa9fb3d0ff6e3f46,
         type: 3}
@@ -6047,8 +6057,8 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 26262456a54e8ce45a187b5c8dacf0c3, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 50
-  m_TreeCrossFadeLength: 5
+  m_TreeBillboardDistance: 115
+  m_TreeCrossFadeLength: 75
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1

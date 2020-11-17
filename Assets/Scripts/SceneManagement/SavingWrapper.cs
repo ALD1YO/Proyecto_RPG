@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RPG.Saving;
+using UnityEngine.SceneManagement;
+
 
 namespace RPG.SceneManagement
 {
@@ -33,6 +35,7 @@ namespace RPG.SceneManagement
         {
             if (Input.GetKeyDown(KeyCode.L))
             {
+                //yield return SceneManager.LoadScene(0);
                 Load();
             }
 
@@ -44,6 +47,11 @@ namespace RPG.SceneManagement
             if (Input.GetKeyDown(KeyCode.Delete))
             {
                 Delete();
+            }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                SceneManager.LoadScene("Muerte");
             }
         }
 

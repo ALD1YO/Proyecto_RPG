@@ -4,7 +4,9 @@ using UnityEngine;
 using RPG.Attributes;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.AI;
+using System.Collections;
 
 namespace RPG.Control
 {
@@ -36,6 +38,9 @@ namespace RPG.Control
             if (health.IsDead())
             {
                 SetCursor(CursorType.None);
+                
+                StartCoroutine(GoToDeadScreenCoroutine());
+                //RemovePersistentObjects();
                 return;
             }
 
@@ -172,6 +177,29 @@ namespace RPG.Control
         private static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+
+        IEnumerator GoToDeadScreenCoroutine()
+        {
+            
+
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene("Muerte");
+        }
+
+        private void RemovePersistentObjects()
+        {
+            foreach (GameObject o in UnityEngine.Object.FindObjectsOfType<GameObject>())
+            {
+                Destroy(o);
+            }
+
+
+            //GameObject persistentObjects;
+            //persistentObjects = GameObject.Find("Saving");
+            //persistentObjects.GetComponent<SceneManagement.SavingWrapper>().enabled = false;
+            //persistentObjects.SetActive(false);
+            //Destroy(persistentObjects);
         }
     }
 }

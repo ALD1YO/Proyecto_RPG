@@ -17,6 +17,7 @@ namespace RPG.SceneManagement
 
         private void Awake()
         {
+            //if(SceneManager.GetActiveScene().name != "Muerte")
             StartCoroutine(LoadLastScene());
         }
 

@@ -104,7 +104,11 @@ namespace RPG.Attributes
 
         private void Die()
         {
-            if (isDead) return;
+            if (isDead) 
+            {
+                return;
+            }
+            
 
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");

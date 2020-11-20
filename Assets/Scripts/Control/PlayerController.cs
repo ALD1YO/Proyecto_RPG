@@ -39,7 +39,7 @@ namespace RPG.Control
             {
                 SetCursor(CursorType.None);
                 
-                StartCoroutine(GoToDeadScreenCoroutine());
+                //StartCoroutine(GoToDeadScreenCoroutine());
                 //RemovePersistentObjects();
                 return;
             }

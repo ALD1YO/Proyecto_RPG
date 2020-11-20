@@ -1338,7 +1338,7 @@ PrefabInstance:
     - target: {fileID: 8671144816835895498, guid: 3394a6e2621b236449e51a9b37700102,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3394a6e2621b236449e51a9b37700102, type: 3}
@@ -1364,6 +1364,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LoadButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6247337580438321100, guid: e089ec80724b4d6449d9e9fbeff51c12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6247337580438321101, guid: e089ec80724b4d6449d9e9fbeff51c12,
         type: 3}

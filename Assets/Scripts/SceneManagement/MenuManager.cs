@@ -24,10 +24,6 @@ namespace RPG.SceneManagement
         {
             Destroy(persistentObjects);
             persistentObjectSpawner.SetActive(true);
-            persistentObjectSpawner.SetActive(false);
-            persistentObjectSpawner.SetActive(true);
-
-
         }
 
         public void QuitGame()

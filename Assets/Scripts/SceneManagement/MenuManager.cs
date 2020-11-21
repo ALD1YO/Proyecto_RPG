@@ -9,22 +9,8 @@ using RPG.Saving;
 namespace RPG.SceneManagement
 {
     public class MenuManager : MonoBehaviour
-    {
-        [SerializeField]
-        private GameObject persistentObjects;
-        private void Start()
-        {
-            persistentObjects = GameObject.Find("PersistentObjects(Clone)");
-        }
-
+    {               
         const string defaultSaveFile = "save";
-
-        [SerializeField] GameObject persistentObjectSpawner;
-        public void ActivateLoadFileGameObject()
-        {
-            Destroy(persistentObjects);
-            persistentObjectSpawner.SetActive(true);
-        }
 
         public void QuitGame()
         {

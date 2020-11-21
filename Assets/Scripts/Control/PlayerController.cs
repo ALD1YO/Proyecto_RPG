@@ -77,6 +77,7 @@ namespace RPG.Control
             if (EventSystem.current.IsPointerOverGameObject())
             {
                 SetCursor(CursorType.UI);
+                print("Over UI");
                 return true;
             }
             return false;

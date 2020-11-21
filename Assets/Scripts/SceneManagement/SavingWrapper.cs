@@ -52,7 +52,9 @@ namespace RPG.SceneManagement
 
             if (Input.GetKeyDown(KeyCode.P))
             {
+                
                 SceneManager.LoadScene("Muerte");
+                print(this.gameObject.name);
             }
         }
 

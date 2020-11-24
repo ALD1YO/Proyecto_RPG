@@ -9,17 +9,34 @@ using RPG.Saving;
 namespace RPG.SceneManagement
 {
     public class MenuManager : MonoBehaviour
-    {               
+    {
+        SavingSystem savingSystem;
         const string defaultSaveFile = "save";
+
+        private void Start()
+        {
+            savingSystem = FindObjectOfType<SavingSystem>();
+        }
+
+        
 
         public void QuitGame()
         {
             Application.Quit();
         }
 
+        public void SaveandQuit()
+        {
+            savingSystem.Save(defaultSaveFile);
+            QuitGame();
+        }
+
         public void DeleteSaveFile()
         {
-            GetComponent<SavingSystem>().Delete(defaultSaveFile);
+            
+            savingSystem.Delete(defaultSaveFile);
+            UnPauseGame();
+            //GetComponent<SavingSystem>().Delete(defaultSaveFile);
         }
 
         public void ChangeScene(string scenename)

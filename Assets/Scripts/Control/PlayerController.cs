@@ -23,6 +23,10 @@ namespace RPG.Control
             //
         }
 
+        [SerializeField] GameObject gameOverHUD;
+        [SerializeField] GameObject playerCanvas;
+        [SerializeField] GameObject pauseCanvas;
+
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius = 1f;
@@ -38,7 +42,10 @@ namespace RPG.Control
             if (health.IsDead())
             {
                 SetCursor(CursorType.None);
-                
+
+                gameOverHUD.SetActive(true);
+                playerCanvas.SetActive(false);
+                pauseCanvas.SetActive(false);
                 //StartCoroutine(GoToDeadScreenCoroutine());
                 //RemovePersistentObjects();
                 return;

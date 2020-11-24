@@ -76,8 +76,7 @@ namespace RPG.Control
             //is this over a UI gameObject? regresa un booleano
             if (EventSystem.current.IsPointerOverGameObject())
             {
-                SetCursor(CursorType.UI);
-                print("Over UI");
+                SetCursor(CursorType.UI);               
                 return true;
             }
             return false;

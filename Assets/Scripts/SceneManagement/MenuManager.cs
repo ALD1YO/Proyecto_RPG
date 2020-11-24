@@ -26,6 +26,21 @@ namespace RPG.SceneManagement
         {
             SceneManager.LoadScene(scenename);
         }
+
+        public void HideShow_GameObjects(GameObject UIgameObject)
+        {                    
+            UIgameObject.SetActive(!UIgameObject.activeSelf);
+        }
+
+        public void PauseGame()
+        {
+            Time.timeScale = 0;
+        }
+
+        public void UnPauseGame()
+        {
+            Time.timeScale = 1;
+        }
     }
 }
 
